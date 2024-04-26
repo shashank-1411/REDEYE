@@ -1,0 +1,196 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    position: relative; /* Add position relative to contain absolute positioned children */
+}
+
+.logo {
+    font-family: 'Irish Grover'; /* Use Irish Grover font */
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    right: 20px; /* Adjust the right property to adjust the position */
+}
+
+
+
+.fa-shopping-cart {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px; /* Adjust the font size if needed */
+    margin-right: 40px; /* Add some space between the text and the icon */
+}
+
+.fa-user-circle {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px; /* Adjust the font size if needed */
+    margin-left: 10px; /* Add some space between the text and the icon */
+}
+.fa-search {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px; /* Adjust the font size if needed */
+    margin-right: 80px; /* Add some space between the text and the icon */
+}
+
+/* New styles */
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(255, 234, 99);
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rt1 4000ms linear infinite;
+}
+
+@keyframes move-rt1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.shanks h1 {
+    font-size: 3rem;
+    background-color: #000000;
+    padding: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff; /* Set text color to white to make it visible against the background */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 30%; /* Adjust as needed */
+    height: auto;
+}
+
+p {
+    text-align: justify;
+    margin: 0 auto; /* Center the paragraph */
+    max-width: 600px; /* Set maximum width for better readability */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.samyak-background h2{
+
+    font-size: xxx-large;
+    padding: 40px;
+   
+}
+
+
+.samyak-background  {
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent red color */
+    padding: 30px; /* Add padding for better spacing */
+}
+
+.samyak-background {
+    padding: 20px;
+    /* Your existing styles for .samyak-background */
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.text {
+    flex: 1;
+    padding-right: 40px; /* Adjust as needed */
+}
+
+.image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.image img {
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    height: auto;
+}
+
+.samyak-background1 {
+    padding: 0px;
+    /* Your existing styles for .samyak-background */
+}
+
+.description1 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.text1 {
+    flex: 1;
+    padding-right: 10px; /* Adjust as needed */
+}
+
+.image1 {
+    flex-shrink: 0; /* Prevent image from shrinking */
+
+}
+
+.image1 img {
+    max-width: 50%; /* Ensure image doesn't exceed its container */
+    height: auto;
+
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}

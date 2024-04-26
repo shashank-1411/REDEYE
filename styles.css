@@ -1,0 +1,156 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+.logo {
+    font-family: 'Irish Grover'; /* Use Irish Grover font */
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    right: 20px; /* Adjust the right property to adjust the position */
+}
+
+
+
+.fa-shopping-cart {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px; /* Adjust the font size if needed */
+    margin-right: 40px; /* Add some space between the text and the icon */
+}
+
+.fa-user-circle {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px; /* Adjust the font size if needed */
+    margin-left: 10px; /* Add some space between the text and the icon */
+}
+.fa-search {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px; /* Adjust the font size if needed */
+    margin-right: 80px; /* Add some space between the text and the icon */
+}
+
+.hero-background {
+    background-image: url('/images/wallpaperflare.com_wallpaper.jpg'); /* Replace 'path_to_your_background_image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    padding: 460px 0; /* Move padding from .hero to .hero-background */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ffffff; /* Set text color to white to make it visible against the background */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #fff; /* Set text color to white to make it visible against the background */
+}
+
+.hero-background h1,
+.hero-background p {
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent red color */
+    padding: 10px; /* Add padding for better spacing */
+    z-index: 1;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #343434;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 20px;
+}
+
+h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rt1 4000ms linear infinite;
+
+}
+
+@keyframes move-rt1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
+.btn:hover {
+    background-color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+

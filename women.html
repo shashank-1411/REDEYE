@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC Clothing - Men</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <style>
+        /* CSS grid layout for product cards */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .h2 {
+            font-size :20;
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">REDEYE</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li class="active"><a href="women.html">Women</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="icon"><a href="#"><i class="fas fa-user-circle"></i></a></li>
+                <li class="icon"><a href="#"><i class="fas fa-search"></i></a></li>
+                <li class="icon"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <!-- Product cards for men's clothing -->
+            <div class="product-card">
+                <img src="images/tshiirt3.webp" alt="T-Shirt">
+                <h2>T-Shirt</h2>
+                <p>Size: M</p>
+                <p>Price: $15.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/shirt2.webp" alt="Shirt">
+                <h2>Shirt</h2>
+                <p>Size: L</p>
+                <p>Price: $17.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/top.webp" alt="Top">
+                <h2>Top</h2>
+                <p>Size: S</p>
+                <p>Price: $25.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/jeans.webp" alt="Jeans">
+                <h2>Jeans</h2>
+                <p>Size: 32</p>
+                <p>Price: $29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/skirt.webp" alt="skirt">
+                <h2>Skirt</h2>
+                <p>Size: XL</p>
+                <p>Price: $19.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/jacket2.webp" alt="Jacket">
+                <h2>Jacket</h2>
+                <p>Size: L</p>
+                <p>Price: $39.99</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NFC Clothing. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

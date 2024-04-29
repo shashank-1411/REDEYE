@@ -70,7 +70,7 @@ nav ul li a {
 }
 
 .hero-background {
-    background-image: url('/images/wallpaperflare.com_wallpaper.jpg'); /* Replace 'path_to_your_background_image.jpg' with the actual path to your image */
+    background-image: url('images/wallpaperflare.com_wallpaper.jpg'); /* Replace 'path_to_your_background_image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     padding: 460px 0; /* Move padding from .hero to .hero-background */
@@ -89,12 +89,7 @@ nav ul li a {
     color: #fff; /* Set text color to white to make it visible against the background */
 }
 
-.hero-background h1,
-.hero-background p {
-    background-color: rgba(0, 0, 0, 0.3); /* Transparent red color */
-    padding: 10px; /* Add padding for better spacing */
-    z-index: 1;
-}
+
 
 
 .btn {

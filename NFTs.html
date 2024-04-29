@@ -6,11 +6,45 @@
   <title>T-Shirt Product Page</title>
   <style>
     /* Basic styling for the page */
+    * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.biju-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 20px;
+}
+h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rt1 4000ms linear infinite;
+
+}
+
+@keyframes move-rt1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
     body {
       background-color: #000000;
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 0px;
       color: #ffffff;
     }
     .product-container {
@@ -24,9 +58,9 @@
       box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     }
     .product-image {
-      width: 350px;
+      width: 400px;
       padding: 40px;
-      height: 350px;
+      height: 400px;
       object-fit: cover;
       border-radius: 10px;
     }
@@ -42,18 +76,33 @@
     .product-price {
       font-weight: bold;
       color: #32cd32;
+      padding: 10px;
+    }
+    .nft-title{
+      color: #ffffff;
+      font-size: 2rem;
+      padding: 30px;
+    }
+    .nft-image{
+      width: 250px;
+      padding: 0px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      border:#ffffff;
     }
     h4 {
       color: #ffd700;
+      padding: 10px;
     }
 
     h5 {
-      font-size: small;
-      padding: 0px;
+      font-size: medium;
+      padding: 30px;
     }
     /* Styling for the graph container */
     .graph-container {
-      margin-top: 2rem;
+      margin-top: 3rem;
       width: 80%;
       max-width: 600px;
       background-color: #ffffff;
@@ -61,21 +110,49 @@
       padding: 1rem;
     }
 
+    .k {
+      padding: 5px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1rem;
+    }
+    footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
    
   </style>
+  <div class="biju-wrapper">
+    <h1>NFC TAG CLOTHING</h1>
+    <h1>NFC TAG CLOTHING</h1>
+    <h1>NFC TAG CLOTHING</h1>
+    <h1>NFC TAG CLOTHING</h1>
+    <h1>NFC TAG CLOTHING</h1>
+    <h1>NFC TAG CLOTHING</h1>
+    <h1>NFC TAG CLOTHING</h1>
+</div>
 </head>
 <body>
+  
   <div class="product-container">
     <div class="product-details">
       <h2 class="product-title">NFC Tracking T-Shirt</h2>
-      <img class="product-image" src="images/skirt.webp" alt="T-Shirt">
+      <img class="product-image" src="images/k dot.webp" alt="T-Shirt">
       <p> "Kendrick Like That"</p>
-      <p class="product-price">RS. 4,900.00</p>
-      <p>Size: M </p>
-      <h3>Brand Name: Bonkers</h3>
-      <p>Owner's Name: Sujal Gaikwad</p>
-      <p>Purchase Date: 2 OCT 2023</p>
+      <p class="product-price">RS. 4,900.00</p><br>
+      <p>Size: M </p><br>
+      <h3>Brand Name: Bonkers</h3><br>
+      <p>Owner's Name: Sujal Gaikwad</p><br>
+      <p>Purchase Date: 2 OCT 2023</p><br>
       <h4>Up for Thrifting</h4>
+      <h5 class="nft-title">NFT</h5>
+      <img class="nft-image" src="images/IMG_1127 (1).PNG" alt="T-Shirt">
+     
+        <p class="k">" K DOT "</p>
+     
+      
       <h5 class="product-title">Wear Counts</h5>
     </div>
     <!-- Graph container -->
@@ -121,4 +198,7 @@
     });
   </script>
 </body>
+<footer>
+  <p>&copy; 2024 NFC Clothing. All rights reserved.</p>
+</footer>
 </html>

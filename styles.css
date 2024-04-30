@@ -41,10 +41,34 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 .icon {
     position: absolute;
     top: 0;
     right: 20px; /* Adjust the right property to adjust the position */
+}
+
+/* CSS for Connect MetaMask button */
+#connectMetaMaskBtn {
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #ff7b56;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#connectMetaMaskBtn:hover {
+    background-color: #a50000;
+    transform: translateY(-2px);
+}
+
+#connectMetaMaskBtn:active {
+    transform: translateY(1px);
 }
 
 
@@ -148,4 +172,20 @@ footer {
     background-color: #333;
     color: #fff;
 }
-
+/* Button Styles */
+.connectMetaMaskBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  .connectMetaMaskBtn:hover {
+    background-color: #2980b9;
+  }

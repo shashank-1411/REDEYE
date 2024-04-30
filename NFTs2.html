@@ -120,7 +120,25 @@ h1{
     padding: 20px 0;
     background-color: #333;
     color: #fff;
-}
+    }
+    /* Button Styles */
+    .connect-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      transition: background-color 0.3s;
+    }
+    .connect-button:hover {
+      background-color: #2980b9;
+    }
+
 
    
   </style>
@@ -154,9 +172,12 @@ h1{
         <p> $59.. </p>
      
       
-      <h5 class="product-title">Wear Counts</h5>
+     
     </div>
+    <!-- MetaMask connection button -->
+    <button class="connect-button" onclick="connectToMetaMask()">Connect MetaMask</button>
     <!-- Graph container -->
+    <div> <h5 class="product-title">Wear Counts</h5></div>
     <div class="graph-container">
       <canvas id="myChart" width="400" height="200"></canvas>
     </div>
@@ -197,9 +218,28 @@ h1{
         data: data,
         options: options
     });
+
+     // Function to connect to MetaMask
+     function connectToMetaMask() {
+      if (window.ethereum) {
+        window.ethereum.request({ method: 'eth_requestAccounts' })
+          .then(accounts => {
+            console.log('Connected to MetaMask:', accounts);
+            // Now you can interact with Ethereum using the 'accounts' array
+          })
+          .catch(error => {
+            console.error('Failed to connect to MetaMask:', error);
+            // Handle connection error
+          });
+      } else {
+        console.log('MetaMask is not installed!');
+        // Handle case when MetaMask is not installed
+      }
+    }
   </script>
 </body>
 <footer>
   <p>&copy; 2024 NFC Clothing. All rights reserved.</p>
 </footer>
+
 </html>

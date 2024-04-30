@@ -7,39 +7,35 @@
   <style>
     /* Basic styling for the page */
     * {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.biju-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    background: rgb(0, 0, 0);
-    overflow: hidden;
-    padding: 20px;
-}
-h1{
-    font-size: 30px;
-    text-transform: uppercase;
-    color: white;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: white;
-    white-space: nowrap;
-    padding: 0 6rem;
-    letter-spacing: 1px;
-    animation: move-rt1 4000ms linear infinite;
-
-}
-
-@keyframes move-rt1 {
-    0% {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .biju-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      background: rgb(0, 0, 0);
+      overflow: hidden;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: white;
+      -webkit-text-stroke-width: 0.1px;
+      -webkit-text-stroke-color: white;
+      white-space: nowrap;
+      padding: 0 6rem;
+      letter-spacing: 1px;
+      animation: move-rt1 4000ms linear infinite;
+    }
+    @keyframes move-rt1 {
+      0% {
         transform: translateX(0);
-    }
-    100% {
+      }
+      100% {
         transform: translateX(-100%);
+      }
     }
-    
-}
     body {
       background-color: #000000;
       font-family: Arial, sans-serif;
@@ -78,12 +74,12 @@ h1{
       color: #32cd32;
       padding: 10px;
     }
-    .nft-title{
+    .nft-title {
       color: #ffffff;
       font-size: 2rem;
       padding: 30px;
     }
-    .nft-image{
+    .nft-image {
       width: 250px;
       padding: 0px;
       height: 250px;
@@ -95,7 +91,6 @@ h1{
       color: #ffd700;
       padding: 10px;
     }
-
     h5 {
       font-size: medium;
       padding: 30px;
@@ -109,20 +104,34 @@ h1{
       border-radius: 10px;
       padding: 1rem;
     }
-
     .k {
       padding: 5px;
       font-family:Verdana, Geneva, Tahoma, sans-serif;
       font-size: 1rem;
     }
     footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-   
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+    }
+    /* Button Styles */
+    .connect-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      transition: background-color 0.3s;
+    }
+    .connect-button:hover {
+      background-color: #2980b9;
+    }
   </style>
   <div class="biju-wrapper">
     <h1>NFC TAG CLOTHING</h1>
@@ -132,10 +141,9 @@ h1{
     <h1>NFC TAG CLOTHING</h1>
     <h1>NFC TAG CLOTHING</h1>
     <h1>NFC TAG CLOTHING</h1>
-</div>
+  </div>
 </head>
 <body>
-  
   <div class="product-container">
     <div class="product-details">
       <h2 class="product-title">NFC Tracking T-Shirt</h2>
@@ -149,22 +157,21 @@ h1{
       <h4>Up for Thrifting</h4>
       <h5 class="nft-title">NFT</h5>
       <img class="nft-image" src="images/IMG_1127 (1).PNG" alt="T-Shirt">
-     
-        <p class="k">" K DOT "</p>
-        <p> $59.. </p>
-     
+      <p class="k">" K DOT "</p>
+      <p> $59.. </p>
       
-      <h5 class="product-title">Wear Counts</h5>
     </div>
+    <!-- MetaMask connection button -->
+    <button class="connect-button" onclick="connectToMetaMask()">Connect MetaMask</button>
     <!-- Graph container -->
+    <div><h5 class="product-title">Wear Counts</h5></div>
+    
     <div class="graph-container">
       <canvas id="myChart" width="400" height="200"></canvas>
     </div>
   </div>
-
   <!-- Include Chart.js library -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
   <script>
     // Data for the graph
     var data = {
@@ -197,6 +204,24 @@ h1{
         data: data,
         options: options
     });
+
+    // Function to connect to MetaMask
+    function connectToMetaMask() {
+      if (window.ethereum) {
+        window.ethereum.request({ method: 'eth_requestAccounts' })
+          .then(accounts => {
+            console.log('Connected to MetaMask:', accounts);
+            // Now you can interact with Ethereum using the 'accounts' array
+          })
+          .catch(error => {
+            console.error('Failed to connect to MetaMask:', error);
+            // Handle connection error
+          });
+      } else {
+        console.log('MetaMask is not installed!');
+        // Handle case when MetaMask is not installed
+      }
+    }
   </script>
 </body>
 <footer>
